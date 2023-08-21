@@ -1,15 +1,19 @@
 [tool.poetry]
-name = "python-redsys"
-version = "1.1.1"
-description = "A simple, clean and less dependant client to handle payments through Redsys."
-authors = ["Andrés Reverón Molina <andres@reveronmolina.me>", "David Díaz <d.diazp@gmail.com>"]
+name = "pyredsys"
+version = "1.1.3"
+description = "A simple, clean and less dependant client to handle payments through Redsys. With BIZUM support!"
+authors = [
+    "Andrés Reverón Molina <andres@reveronmolina.me>",
+    "David Díaz <d.diazp@gmail.com>",
+    "Antonio Porcelli <antonio@progressify.dev>"
+]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/systemallica/python-redsys"
 classifiers = [
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
 ]
 packages = [
     { include = "redsys" }
@@ -48,6 +52,7 @@ exclude = '''
   | \.mypy_cache
   | \.tox
   | \.venv
+  | \myvenv
   | _build
   | buck-out
   | build
@@ -58,7 +63,7 @@ exclude = '''
 
 [tool.semantic_release]
 version_variable = [
-  "redsys/__init__.py:__version__",
+    "redsys/__init__.py:__version__",
 ]
 version_toml = ["pyproject.toml:tool.poetry.version"]
 upload_to_pypi = true
