@@ -31,8 +31,8 @@ Or with poetry:
 
 ```python
 from decimal import Decimal as D, ROUND_HALF_UP
-from redsys.constants import EUR, STANDARD_PAYMENT
-from redsys.client import RedirectClient
+from pyredsys.constants import EUR, STANDARD_PAYMENT
+from pyredsys.client import RedirectClient
 
 secret_key = "123456789abcdef"
 client = RedirectClient(secret_key)

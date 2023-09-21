@@ -2,7 +2,7 @@ import re
 from decimal import Decimal
 from typing import Any, Dict
 
-from redsys.constants import CURRENCIES, LANGUAGES, TRANSACTIONS
+from pyredsys.constants import CURRENCIES, LANGUAGES, TRANSACTIONS
 
 # General parameters
 MERCHANT_CODE = "Ds_Merchant_MerchantCode"

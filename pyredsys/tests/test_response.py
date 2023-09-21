@@ -1,4 +1,4 @@
-from redsys.response import Response
+from pyredsys.response import Response
 
 
 class TestResponse:

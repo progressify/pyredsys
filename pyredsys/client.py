@@ -8,8 +8,8 @@ from typing import Any, Dict
 
 from Crypto.Cipher import DES3
 
-from redsys.request import Request
-from redsys.response import Response
+from pyredsys.request import Request
+from pyredsys.response import Response
 
 # Calculated parameters
 SIGNATURE_VERSION = "Ds_SignatureVersion"

@@ -4,8 +4,8 @@ from random import choice
 
 import pytest
 
-from redsys.constants import EUR, STANDARD_PAYMENT
-from redsys.request import Request
+from pyredsys.constants import EUR, STANDARD_PAYMENT
+from pyredsys.request import Request
 
 
 class TestRequest:

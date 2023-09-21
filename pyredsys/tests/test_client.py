@@ -3,9 +3,9 @@ from decimal import Decimal as D
 
 import pytest
 
-from redsys.client import RedirectClient
-from redsys.constants import EUR, STANDARD_PAYMENT
-from redsys.request import Request
+from pyredsys.client import RedirectClient
+from pyredsys.constants import EUR, STANDARD_PAYMENT
+from pyredsys.request import Request
 
 
 class TestRedirectClient:
